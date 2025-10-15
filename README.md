@@ -30,10 +30,20 @@ A working MCP server that can:
 
 ## Resources
 
-- Fortune data: `data/fortunes.txt`
-- MCP specification: https://modelcontextprotocol.io/
+- [Wikipedia UNIX “fortune” command](https://en.wikipedia.org/wiki/Fortune_(Unix))
+- [MCP specification](https://modelcontextprotocol.io/)
 - Use your AI coding assistant to learn MCP server patterns and implementation details
-
+- Fortune data
+  - The cookie file format is multiline strings seperated by a '%' char
+  - Past implementations have used a directory with multiple data files with methods for filtering the content
+  - `data/fortunes.txt` - 3 sample fortunes provided in this repo
+  - [classical](https://github.com/HubTou/fortunes-freebsd-classic) and [historical](https://github.com/HubTou/fortunes-historical) cookie files
+- fortune implementations
+  - [Debian](https://salsa.debian.org/debian/fortune-mod)
+  - [C](https://github.com/shlomif/fortune-mod)
+  - [Python](https://github.com/bmc/fortune)
+  - [Go](https://github.com/bmc/fortune-go/)
+ 
 ## Tips
 
 - Start simple - get basic fortune serving working first
